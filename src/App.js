@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react"
+import {Button} from "@mui/material";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary : {
+      main : "#9D00FF",
+    },
+  },
+});
+
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+    primary : {
+      main : "#9D00FF",
+    },
+  },
+})
+
+function App(){
+  const [dark , setTheme] = React.useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={dark ? darkTheme : lightTheme}>
+      <CssBaseline />
+      <main>
+        <div className='App'>
+          <h1>Getting Started</h1>
+          <Button onClick={() => {
+            setTheme(false);
+          }} variant="contained" sx={{marginRight : 3}}>Light</Button>
+          <Button onClick={() => {
+            setTheme(true)
+          }} variant="contained">Dark</Button>
+        </div>
+      </main>
+    </ThemeProvider>
+  )
 }
 
 export default App;

@@ -22,24 +22,42 @@ const lightTheme = createTheme({
   },
 })
 
-function App(){
-  const [dark , setTheme] = React.useState(true);
-  return (
-    <ThemeProvider theme={dark ? darkTheme : lightTheme}>
-      <CssBaseline />
-      <main>
-        <div className='App'>
-          <h1>Getting Started</h1>
-          <Button onClick={() => {
-            setTheme(false);
-          }} variant="contained" sx={{marginRight : 3}}>Light</Button>
-          <Button onClick={() => {
-            setTheme(true)
-          }} variant="contained">Dark</Button>
-        </div>
-      </main>
-    </ThemeProvider>
-  )
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      dark : true,
+    };
+  }
+
+  toggleDarkMode(){
+    this.setState({dark : true});
+  }
+  toggleLightMode(){
+    this.setState({dark : false})
+  }
+
+  render(){
+    return (
+      <ThemeProvider theme={this.state.dark ? darkTheme : lightTheme}>
+        <CssBaseline />
+        <main>
+          <div className='App'>
+            <h1>Getting Started</h1>
+            <p>This is a paragraph and this is what it will feel like to read an article</p>
+            <Button onClick={() => {
+              this.toggleLightMode();
+            }} variant="contained" sx={{marginRight : 3}}>Light</Button>
+            <Button onClick={() => {
+              this.toggleDarkMode();
+            }} variant="contained">Dark</Button>
+          </div>
+        </main>
+      </ThemeProvider> 
+    )
+  }
 }
+
+
 
 export default App;

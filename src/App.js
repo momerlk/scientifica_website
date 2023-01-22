@@ -102,6 +102,7 @@ class App extends React.Component {
                 width="154px"
               ></iframe>
               <h1 className="glitch-txt">A.I</h1>
+              <hr color="#9D00FF" width="60%"></hr>
               <p className="description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
@@ -129,6 +130,7 @@ class App extends React.Component {
                   className="astronomy-logo" 
                 ></iframe>
                 <h1>Astronomy</h1>
+                <hr color="#9D00FF" width="60%"></hr>
                 <p className="description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
@@ -139,7 +141,11 @@ class App extends React.Component {
                 Ipsum
               </p>
 
-              <Button variant="contained">Learn More</Button>
+              <Button variant="contained" sx={{
+                paddingLeft : 4,
+                paddingRight : 4,
+                fontSize : "medium",
+              }}>Learn More</Button>
               </div>
           </div>
         </main>

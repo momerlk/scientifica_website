@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
 
+@font-face {
+  font-family: 'alien';
+  src: local("./space.tff");
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -61,6 +65,21 @@ video {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
   color : "";
+}
+
+.astronomy {
+  margin-top : 15%;
+  margin-left: 2%;
+  margin-right : 2%;
+  margin-left : 2%;
+  text-align: center;
+}
+
+.astronomy-logo {
+  border : none;
+  border-radius: 50%;
+  width : 200px;
+  height : 300px; 
 }
 
 .description {

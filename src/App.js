@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import bgVid from "./assets/stars.mp4"
 import TypeWriterEffect from 'react-typewriter-effect';
-import Lottie from 'react-lottie';
+import Crawl from 'react-star-wars-crawl'
 
 
 
@@ -73,7 +73,7 @@ class App extends React.Component {
                   <div className='typewriter'>
                     <TypeWriterEffect
                       textStyle={{ fontFamily: 'Josefin sans', color: "white" , textAlign : "center", }}
-                      startDelay={700}
+                      startDelay={300}
                       id="subheading"
                       cursorColor="#9D00FF"
                       text="Science Magazines reimagined."
@@ -92,7 +92,9 @@ class App extends React.Component {
                   >Explore ↓</Button>
               </div>
           </div>
-          <div className='ai' ref={this.ai_ref}>
+
+          {/* AI Section */}
+          <div className="ai" ref={this.ai_ref}>
             
               
               <iframe src="https://embed.lottiefiles.com/animation/103186"
@@ -118,6 +120,26 @@ class App extends React.Component {
                   <span aria-hidden className="cybr-btn__glitch">Learn more __</span>
                   <span aria-hidden className="cybr-btn__tag"></span>
                 </button>
+
+              </div>
+
+              <div className="astronomy">
+                <iframe 
+                  src="https://embed.lottiefiles.com/animation/78396"
+                  className="astronomy-logo" 
+                ></iframe>
+                <h1>Astronomy</h1>
+                <p className="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                unknown printer took a galley of type and scrambled it to make a type specimen 
+                book. It has survived not only five centuries, but also the leap into electronic 
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                Ipsum
+              </p>
+
+              <Button variant="contained">Learn More</Button>
               </div>
           </div>
         </main>

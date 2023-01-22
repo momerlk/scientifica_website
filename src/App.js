@@ -116,7 +116,7 @@ class App extends React.Component {
                 }}>
                   _ Learn more<span aria-hidden> _</span>
                   <span aria-hidden className="cybr-btn__glitch">Learn more __</span>
-                  <span aria-hidden className="cybr-btn__tag">AC</span>
+                  <span aria-hidden className="cybr-btn__tag"></span>
                 </button>
               </div>
           </div>

@@ -1,4 +1,5 @@
 import './App.css';
+import './effects.css';
 import React from "react"
 import {Button} from "@mui/material";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -93,14 +94,31 @@ class App extends React.Component {
           </div>
           <div className='ai' ref={this.ai_ref}>
             
-            {/* <Lottie options={defaultOptions}
-              height={400}
-              width={400}
-              isStopped={this.state.isStopped}
-              isPaused={this.state.isPaused}/> */}
-              <iframe src="https://embed.lottiefiles.com/animation/9944" className='lottie'   
+              
+              <iframe src="https://embed.lottiefiles.com/animation/103186"
+                className="lottie" 
+                width="154px"
               ></iframe>
-              <h1>AI</h1>
+              <h1 className="glitch-txt">A.I</h1>
+              <p className="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                unknown printer took a galley of type and scrambled it to make a type specimen 
+                book. It has survived not only five centuries, but also the leap into electronic 
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+                the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                Ipsum
+              </p>
+
+              <div >
+                <button className="cybr-btn" onClick={() => {
+
+                }}>
+                  _ Learn more<span aria-hidden> _</span>
+                  <span aria-hidden className="cybr-btn__glitch">Learn more __</span>
+                  <span aria-hidden className="cybr-btn__tag">AC</span>
+                </button>
+              </div>
           </div>
         </main>
       </ThemeProvider> 

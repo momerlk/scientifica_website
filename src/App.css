@@ -3,7 +3,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 /* Track */
@@ -50,7 +50,7 @@ video {
 
 .typewriter {
   text-align: center;
-  margin-left: 0.1%;
+  margin-left: 1.8%;
 }
 
 .ai {

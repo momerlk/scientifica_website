@@ -107,3 +107,15 @@ video {
   background-color: rgba(0,0,0,.4);
   /* background-color: #000000cc; */
 }
+
+.footer {
+  background: #49515C  no-repeat 100% 0;
+  border-bottom: 5px solid #fff;
+  border-top: 10px solid #fff;
+  text-align: center;  
+  color: #fff;
+  font-size: 0.8em;
+  padding: 10px;
+  line-height: 16px;
+  clear: both;
+  }

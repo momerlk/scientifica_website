@@ -256,7 +256,7 @@
   }
 }
 
-.cybr-btn:nth-of-type(1) {
+.cybr-btn {
   --primary-hue: 260;
 }
 /* Button Glitch effect end */
